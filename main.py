@@ -55,8 +55,8 @@ def hard_mode():
     print("The rules are simple. You may choose any of 5 possible moves, as can the computer.\nIn hard mode, the computer chooses twice, and has its choices favored.")
     print("1. Rock\n2. Paper\n3. Scissors\n4. Spock\n5. Lizard\nChoices must be inputted as integers.")
     hard_choice = input("Please make your choice: ")
-    hard_choice_pc = 3#random.randint(1, 5)
-    hard_choice_pc_2 = 1#random.randint(1,5)
+    hard_choice_pc = random.randint(1, 5)
+    hard_choice_pc_2 = random.randint(1,5)
     try:
         hard_choice_int = int(hard_choice)
     except ValueError:
