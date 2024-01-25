@@ -3,7 +3,6 @@ import sys
 
 print("Welcome to Rock Paper Scissors Spock Lizard!\n")
 
-
 def diff_selector():
     diff = input("Please select your difficulty! 1 (Easy) or 2 (Hard): ")
     try:
@@ -18,7 +17,7 @@ def diff_selector():
         print("Thank you! you have selected hard difficulty " + diff)
         hard_mode()
     else:
-        print("Error, not an available difficulty. please try again.\n")
+        print("Not an available difficulty. Please try again.\n")
         diff_selector()
 
 
@@ -48,7 +47,7 @@ def easy_mode():
         else:
             print(f"You chose " + str(ez_choice_int) + " and the computer chose " + str(ez_choice_pc) + ". You lose :(")
     else:
-        print("Error, not an available option. Please try again.\n")
+        print("Not an available option. Please try again.\n")
         easy_mode()
     re_run()
 
@@ -79,7 +78,7 @@ def hard_mode():
         else:
             print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You lose :(")
     else:
-        print("Error, not an available option. Please try again.\n")
+        print("Not an available option. Please try again.\n")
         hard_mode()
     re_run()
 
