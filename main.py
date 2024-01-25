@@ -63,18 +63,18 @@ def hard_mode():
         print("Invalid input. Please enter an integer.\n")
         hard_mode()
     if(hard_choice_int in range(1,6)):
-        if(hard_choice_int == 1 and (hard_choice_pc in (3,5) and hard_choice_pc_2 in (3,5))):
-            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
-        elif (hard_choice_int == 2 and (hard_choice_pc in (1,4) and hard_choice_pc_2 in (1, 4))):
-            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
-        elif (hard_choice_int == 3 and (hard_choice_pc in (2,5) and hard_choice_pc_2 in (2, 5))):
-            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
-        elif (hard_choice_int == 4 and (hard_choice_pc in (1,3) and hard_choice_pc_2 in (1, 3))):
-            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
-        elif (hard_choice_int == 5 and (hard_choice_pc in (2,4) and hard_choice_pc_2 in (2, 4))):
-            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
-        elif (hard_choice_int == hard_choice and hard_choice_int == hard_choice_pc_2):
+        if (hard_choice_int == hard_choice and hard_choice_int == hard_choice_pc_2):
             print(f"You chose " + str(hard_choice_int) + "and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". Its a tie!")
+        elif(hard_choice_int == 1 and (hard_choice_pc in (1,3,5) and hard_choice_pc_2 in (1,3,5))):
+            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
+        elif (hard_choice_int == 2 and (hard_choice_pc in (1,2,4) and hard_choice_pc_2 in (1,2,4))):
+            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
+        elif (hard_choice_int == 3 and (hard_choice_pc in (2,3,5) and hard_choice_pc_2 in (2,3,5))):
+            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
+        elif (hard_choice_int == 4 and (hard_choice_pc in (1,3,4) and hard_choice_pc_2 in (1, 3,4))):
+            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
+        elif (hard_choice_int == 5 and (hard_choice_pc in (2,4,5) and hard_choice_pc_2 in (2,4,5))):
+            print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You win!")
         else:
             print(f"You chose " + str(hard_choice_int) + " and the computer chose " + str(hard_choice_pc) + " + " + str(hard_choice_pc_2) + ". You lose :(")
     else:
